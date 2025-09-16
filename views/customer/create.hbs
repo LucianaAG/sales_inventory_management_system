@@ -1,0 +1,39 @@
+    
+    <form method="POST" action="/customer/create" id="form_create_customer">
+        <div class="mb-3">
+            <label for="last_name" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" id="last_name" name="last_name">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="dni" class="form-label">DNI</label>
+            <input type="text" class="form-control" id="dni" name="dni">
+        </div>
+        <div class="mb-3">
+            <label for="city" class="form-label">Ciudad:</label>
+            <select class="form-select" aria-label="Default select example" name="city">
+                <option selected>Seleccione una ciudad</option>
+                <option value="Rio Grande">Rio Grande</option>
+                <option value="Tolhuin">Tolhuin</option>
+                <option value="Ushuaia">Ushuaia</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="radio" name="gender" id="femenino" value="femenino">
+                <label for="femenino" class="ms-2">Femenino</label>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <input class="form-check-input mt-0" type="radio" name="gender" id="masculino" value="masculino">
+                <label for="masculino" class="ms-2">Masculino</label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
